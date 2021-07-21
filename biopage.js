@@ -1,21 +1,23 @@
 'usescript'
 
-let userName = prompt("Greetings! What is your name?");
+let userName = prompt("Greetings! What is your name?"); //declare a variable and ask the user a question
 let confirmGuess = confirm(
   " Welcome " + userName + "! Are you ready for your guessing game?"
 );
 
 
-let userLight = true;
+let userLight = true; //Set the veriable to equal true
 while (userLight) {
-  let response = prompt("Did Edison create the lightbulb? y/n?");
+  let response = prompt("Did Edison create the lightbulb? y/n?"); /* A while loop is used here
+  to run the response of the user! */
   {
     if (response === "y" || response === "yes" || response === response.toUpperCase('y')) {
       userLight = false;
       //console.log(userLight);
-      alert("Right on! You know your stuff!");
+      
+      alert("Right on! You know your stuff!"); // an alert pops up if the user is correct!
     } else {
-      alert("WRONG");
+      alert("WRONG"); //An alert pops up if the user is incorrect
     }
   }
 }
